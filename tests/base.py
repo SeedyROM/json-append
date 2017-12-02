@@ -8,7 +8,9 @@
 # http://www.opensource.org/licenses/MIT-license
 # Copyright (c) 2017, Zack Kollar <zackkollar@gmail.com>
 
-from unittest import TestCase as PythonTestCase 
+from unittest import TestCase as PythonTestCase
+
+from json_append import parser
 
 class TestCase(PythonTestCase):
     pass
