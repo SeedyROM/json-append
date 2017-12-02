@@ -6,6 +6,7 @@ from preggy import expect
 from json_append import parser
 from tests.base import TestCase
 
+
 TEST_JSON = json.dumps({
     'test1': 'testing',
     'test2': True
@@ -15,6 +16,7 @@ class TestBasicImplementation(TestCase):
     def setUp(self):
         self.empty_instance = parser.reader()
         self.instance_type = self.empty_instance.__class__
+
         self.file_path = 'json.json'
         self.instance = parser.reader(file_path=self.file_path)
 
@@ -53,3 +55,5 @@ class TestBasicImplementation(TestCase):
         expect(self.instance.current_file.name).to_equal(argument_file_name)
 
         os.remove(test_file.name)
+
+        

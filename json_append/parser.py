@@ -11,7 +11,7 @@ class JSONReader:
         if file_path is not None:
             self.file_path = file_path
 
-        self.current_file = open(self.file_path, 'rw')
+        self.current_file = open(self.file_path, 'r+')
 
 
 def reader(*args, **kwargs):
