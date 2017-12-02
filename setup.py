@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # This file is part of json-append.
-# https://github.com/someuser/somepackage
+# https://github.com/SeedyROM/json-append
 
 # Licensed under the MIT license:
 # http://www.opensource.org/licenses/MIT-license
@@ -33,7 +33,7 @@ Append key value pairs to json files from the a cli.
     keywords='json configuration automation',
     author='Zack Kollar',
     author_email='zackkollar@gmail.com',
-    url='https://github.com/someuser/somepackage',
+    url='https://github.com/SeedyROM/json-append',
     license='MIT',
     classifiers=[
         'Development Status :: 4 - Beta',
