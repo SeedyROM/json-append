@@ -24,7 +24,7 @@ class JSONReader:
         """
         self.file_path = file_path
         self.current_file = None
-        self.data = None
+        self.data = dict()
 
     def load(self, file_path=None):
         """Load a file either from state or specified file_path.

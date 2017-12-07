@@ -1,4 +1,6 @@
 import argparse
+import sys
+import os
 
 from .parser import reader
 
@@ -17,6 +19,16 @@ def arg_parser():
     )
 
     parser.add_argument(
+        'key', nargs=1,
+        help='Key to change or get'
+    )
+
+    parser.add_argument(
+        'value', nargs='?',
+        help='Value to set',
+    )
+
+    parser.add_argument(
         '-o', '--output', type=str, required=False,
         help='Output path'
     )
@@ -24,11 +36,18 @@ def arg_parser():
     return parser
 
 
-def main():
+def main():  # pragma: no cover
     """The main entry point for our program.
     """
     parser = arg_parser()
     args = parser.parse_args()
+    args.file = args.file[0]
+
+    if not os.path.exists(args.file):
+        sys.stdout.write(f'{args.file}: File does not exist!\n')
+        sys.exit(-1)
+
+    json_reader = reader(file_path=args.file)
 
 
 if __name__ == '__main__':

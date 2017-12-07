@@ -11,6 +11,7 @@
 from setuptools import setup, find_packages
 from json_append import __version__
 
+
 tests_require = [
     'mock',
     'nose',
