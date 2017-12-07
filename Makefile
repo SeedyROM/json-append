@@ -32,3 +32,7 @@ tox:
 
 #docs:
 	#@cd json_append/docs && make html && open _build/html/index.html
+
+# check pep8
+lint:
+	@pycodestyle json_append

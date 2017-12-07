@@ -18,9 +18,10 @@ tests_require = [
     'yanc',
     'preggy',
     'tox',
-    'ipdb',
+    'pudb',
     'coveralls',
     'sphinx',
+    'pycodestyle'
 ]
 
 setup(
@@ -42,6 +43,7 @@ Append key value pairs to json files from the a cli.
         'Natural Language :: English',
         'Operating System :: Unix',
         'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Operating System :: OS Independent',
     ],
