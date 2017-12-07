@@ -21,7 +21,8 @@ tests_require = [
     'pudb',
     'coveralls',
     'sphinx',
-    'pycodestyle'
+    'pycodestyle',
+    'coverage-badge'
 ]
 
 setup(
