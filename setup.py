@@ -18,7 +18,6 @@ tests_require = [
     'yanc',
     'preggy',
     'tox',
-    'pudb',
     'coveralls',
     'sphinx',
     'pycodestyle',
