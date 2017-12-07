@@ -59,8 +59,7 @@ Append key value pairs to json files from the a cli.
     },
     entry_points={
         'console_scripts': [
-            # add cli scripts here in this form:
-            # 'json-append=json_append.cli:main',
+            'json-append=json_append.cli:main',
         ],
     },
 )
