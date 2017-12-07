@@ -17,4 +17,5 @@ install:
 
 script:
     # run tests
+    - make lint
     - make test
