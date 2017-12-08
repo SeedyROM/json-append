@@ -44,7 +44,7 @@ def main():  # pragma: no cover
     args.file = args.file[0]
 
     if not os.path.exists(args.file):
-        sys.stdout.write('{}: File does not exist!\n' % args.file)
+        sys.stdout.write('{%s}: File does not exist!\n' % args.file)
         sys.exit(-1)
 
     json_reader = reader(file_path=args.file)
